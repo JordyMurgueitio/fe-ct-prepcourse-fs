@@ -33,7 +33,7 @@ function conection(status) {
    // Tu código:
    switch (status) {
       case 1: 
-         return "0nline"; 
+         return "Online"; 
          break; 
       case 2: 
          return "Away";
@@ -138,7 +138,7 @@ function fizzBuzz(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if (num % 3 === 0 && num % 5 === 0 ) {
-      return "fizz buzz"; 
+      return "fizzbuzz"; 
    } else if (num % 3 === 0) {
       return "fizz"; 
    } else if (num % 5 === 0) {
@@ -157,7 +157,7 @@ function operadoresLogicos(num1, num2, num3) {
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
-   if (num1 > num2 && num2 > num3 && num1 > 0) {
+   if (num1 > num2 && num1 > num3 && num1 > 0) {
       return "Numero 1 es mayor y positivo";
    } else if (num1 < 0 || num2 < 0 || num3 < 0) {
       return "Hay negativos"; 
@@ -185,10 +185,9 @@ function esPrimo(num) {
    for (let i = 2; i < num; i++) {
       if (num % i === 0) {
          return false;
-      } else {
-         return true; 
-      }
+      } 
    }
+   return true;
 }
 
 function esVerdadero(valor) {
